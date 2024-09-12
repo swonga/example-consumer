@@ -7,7 +7,7 @@
 GITHUB_ORG="pactflow"
 PACTICIPANT="pactflow-example-consumer"
 GITHUB_WEBHOOK_UUID := "04510dc1-7f0a-4ed2-997d-114bfa86f8ad"
-PACT_CLI="docker run --rm -v ${PWD}:${PWD} -e PACT_BROKER_BASE_URL -e PACT_BROKER_TOKEN pactfoundation/pact-cli"
+PACT_CLI="docker run --rm -v ${PWD}:${PWD} -e PACT_BROKER_BASE_URL https://smartbear-sw.pactflow.io -e PACT_BROKER_TOKEN pactfoundation/pact-cli"
 
 .EXPORT_ALL_VARIABLES:
 GIT_COMMIT?=$(shell git rev-parse HEAD)
